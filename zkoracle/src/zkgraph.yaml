@@ -1,0 +1,24 @@
+specVersion: 0.0.2
+apiVersion: 0.0.2
+name: zkKYC
+description: "zkKYC enables KYC verification for Story Protocol using zkOracle and Story Protocol hook."
+repository: https://github.com/hyperoracle/zkgraph
+dataSources:
+  - kind: ethereum
+    network: mainnet
+    event:
+      - address: '0xa60ecf32309539dd84f27a9563754dca818b815e'
+        events:
+          - "Sync(uint112,uint112)"
+  - kind: offchain
+    type: bytes
+
+mapping:
+  language: wasm/assemblyscript
+  file: ./mapping.ts
+  handler: handlePado
+
+dataDestinations:
+  - kind: ethereum
+    network: sepolia
+    address: "0x0000000000000000000000000000000000000001"

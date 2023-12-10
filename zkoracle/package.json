@@ -1,0 +1,33 @@
+{
+  "name": "zkkyc",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "compile-local": "zkgraph compile --local",
+    "setup-local": "zkgraph setup --local",
+    "exec-local": "zkgraph exec --local",
+    "prove-local": "zkgraph prove --local",
+    "upload-local": "zkgraph upload --local",
+    "deploy-local": "zkgraph deploy --local",
+    "compile": "zkgraph compile",
+    "setup": "zkgraph setup",
+    "exec": "zkgraph exec",
+    "prove": "zkgraph prove",
+    "upload": "zkgraph upload",
+    "deploy": "zkgraph deploy",
+    "verify": "zkgraph verify",
+    "publish": "zkgraph publish",
+    "test": "node scripts/test.js"
+  },
+  "dependencies": {
+    "@ethereum-attestation-service/eas-sdk": "^1.3.4",
+    "@hyperoracle/zkgraph-lib": "^0.0.9-alpha.5",
+    "ethers": "^5.7.0",
+    "tsc": "^2.0.4"
+  },
+  "devDependencies": {
+    "@hyperoracle/zkgraph-cli": "0.0.2-alpha.3",
+    "assemblyscript": "^0.27.0"
+  }
+}

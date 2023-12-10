@@ -8,6 +8,7 @@ Currently, zkKYC supports integration of CEX KYC status with Story Protocol.
 
 ## Why?
 
+- **Connects Offchain Data with Onchain Story Protocol**
 - **Decentralized**: KYCHook allows users to be KYCed without relying on a centralized admin, and users can permissionlessly submit their own KYC proofs.
 - **Trustless**: KYCHook verifies the zk proof of KYC status onchain, so Story Protocol IPOrg can trust the KYC status without trusting any third party.
 - **Privacy**: zkKYC only proves a user is KYCed without revealing any of their information.

@@ -1,0 +1,9 @@
+{
+  "extends": "assemblyscript/std/assembly.json",
+  "include": [
+    "./**/*.ts"
+, "scripts/verifySig.js", "scripts/verifySig.js"  ],
+  "compilerOptions": {
+    "strictBindCallApply": false
+  }
+}
