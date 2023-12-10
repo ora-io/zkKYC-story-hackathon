@@ -19,9 +19,11 @@ Currently, zkKYC supports integration of CEX KYC status with Story Protocol.
 - Configuration for different countries IP related policies
 - Can be extended to other offchain data sources (eg. geo location, age, etc.)
 
-## Core
+## Architecture
 
 zkKYC consists of 2 parts: zkOracle (generates zkp of user KYC status) and KYCHook (integrates Story Protocol with zkOracle).
+
+![Architecture](./architecture.png)
 
 Components:
 - [zkOracle](zkoracle/README.md): Generates zk proofs of KYC status.
