@@ -48,7 +48,7 @@ contract KYCed is Ownable {
     }
 
     /// @notice Verify if an user is allowed to perform an action
-    /// @dev This function check if whitelist is enabled, return false it is NOT whitelisted. Otherwise return true.
+    /// @dev This function check if kyced is enabled, return false if address is NOT kyced. Otherwise return true.
     function canPerformAction(address user_) external view returns (bool) {
         return (!kycEnabled) || kyced[user_];
     }
