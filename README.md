@@ -24,7 +24,7 @@ Currently, zkKYC supports integration of CEX KYC status with Story Protocol.
 zkKYC consists of 2 parts: zkOracle (generates zkp of user KYC status) and KYCHook (integrates Story Protocol with zkOracle).
 
 Components:
-- [zkOracle](zkOracle/README.md): Generates zk proofs of KYC status.
+- [zkOracle](zkoracle/README.md): Generates zk proofs of KYC status.
 - [KYCHook](story-hook/README.md): Story Protocol hook that checks if a user is KYCed by verifying the zk proof.
 
 ## Future Steps
