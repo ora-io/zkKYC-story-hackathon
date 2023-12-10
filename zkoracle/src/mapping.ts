@@ -7,15 +7,15 @@ import { PadoType } from "./types/padoType";
 
 export function handlePado(_: Block[], easData: Bytes): Bytes {
   const attestation = new Attestation(easData);
-  // contrain(attestation.recover() === PADO_ATTESTER);
+  contrain(attestation.recover() === PADO_ATTESTER);
 
-  // const padoBuilder = new PadoBuilder(PadoType.accountOwnershipProof);
-  // const pado = padoBuilder.build(attestation.data) as PadoAccountOwnershipProof;
+  const padoBuilder = new PadoBuilder(PadoType.accountOwnershipProof);
+  const pado = padoBuilder.build(attestation.data) as PadoAccountOwnershipProof;
 
-  // const isBinance = pado.source === "binance";
-  // const isKyc = pado.content === "KYC Level";
-  // const KycLevelBiggerThan2 = pado.condition === ">=2";
+  const isBinance = pado.source === "binance";
+  const isKyc = pado.content === "KYC Level";
+  const KycLevelBiggerThan2 = pado.condition === ">=2";
 
-  // contrain(isBinance && isKyc && KycLevelBiggerThan2);
-  return Bytes.fromI32(1);
+  contrain(isBinance && isKyc && KycLevelBiggerThan2);
+  // return Bytes.fromI32(1);
 }
